@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ECommerce</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/lib/bootstrap/dist/css/MyMainLayOut.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/ECommerce.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-6 col-sm-6 col-xs-6">
+                <div class="logo">
+                    <h1><a href="a">Online<span>Shopping Store</span></a></h1>
+                    <p>My Shop</p>
+                </div>
+            </div>
+
+            <div class=" col-md-6 col-sm-6 col-xs-6">
+                <div class="account">
+                    <ul>
+                        <li>
+                            <div class="hidden-xs">
+                                <h4><a>Call</a></h4>
+                                <p>044100200</p>
+                            </div>
+
+                            <div class="visible-xs">
+
+                                <p>044100200</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+         <div class="row">
+
+                <div class="col-md-12">
+                    <div class="nav-menus">
+
+                        <ul class="nav nav-pills">
+                            <li class="active"><a style="border-radius:initial;" href="#">Home</a></li>
+                            <li ><a style="border-radius:initial;" href="#">Location</a></li>
+                            <li ><a  style="border-radius:initial;" href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - ECommerce - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
