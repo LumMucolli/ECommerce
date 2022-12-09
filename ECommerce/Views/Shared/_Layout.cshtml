@@ -7,60 +7,93 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link href="~/lib/bootstrap/dist/css/MyMainLayOut.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/ECommerce.styles.css" asp-append-version="true" />
+   <link rel="stylesheet" href="~/ECommerce.styles.css" asp-append-version="true" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class=" col-md-6 col-sm-6 col-xs-6">
-                <div class="logo">
-                    <h1><a href="a">Online<span>Shopping Store</span></a></h1>
-                    <p>My Shop</p>
-                </div>
-            </div>
-
-            <div class=" col-md-6 col-sm-6 col-xs-6">
-                <div class="account">
-                    <ul>
-                        <li>
-                            <div class="hidden-xs">
-                                <h4><a>Call</a></h4>
-                                <p>044100200</p>
+            <div class="span12">
+                <div class="head">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="span6">
+                                <h1 class="muted">Company</h1>
                             </div>
 
-                            <div class="visible-xs">
-
-                                <p>044100200</p>
+                            <div class="span4 offset2" style="margin-top:15px;">
+                                <button class="btn pull-right" type="button">Sign In</button>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="container">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#">Kompjuter, Laptop</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Celular</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Gaming</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Aksesore</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+            @RenderBody()
+    <footer>
 
-         <div class="row">
-
-                <div class="col-md-12">
-                    <div class="nav-menus">
-
-                        <ul class="nav nav-pills">
-                            <li class="active"><a style="border-radius:initial;" href="#">Home</a></li>
-                            <li ><a style="border-radius:initial;" href="#">Location</a></li>
-                            <li ><a  style="border-radius:initial;" href="#">About</a></li>
+        <section id="footer">
+            <div class="container">
+                <div class="row text-center text-xs-center text-sm-left text-md-left">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Llogaria ime</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Kycu</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Regjistrohu</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Keni harruar fjalekalimin?</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Kujdesi ndaj klienteve</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Per Company</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Pagesat</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Transporti</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Produktetet</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Kontakti</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Kosove: +38349100100</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>contact@company.com</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Prishtine, Kosove</a></li>
                         </ul>
                     </div>
                 </div>
-
             </div>
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - ECommerce - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+        </section>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -68,3 +101,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+    

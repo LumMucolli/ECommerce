@@ -29,3 +29,34 @@ C:\Users\RS Computers\source\repos\ECommerce\ECommerce\obj\Debug\net6.0\refint\E
 C:\Users\RS Computers\source\repos\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.pdb
 C:\Users\RS Computers\source\repos\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.genruntimeconfig.cache
 C:\Users\RS Computers\source\repos\ECommerce\ECommerce\obj\Debug\net6.0\ref\ECommerce.dll
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\bin\Debug\net6.0\appsettings.json
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\bin\Debug\net6.0\ECommerce.staticwebassets.runtime.json
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\bin\Debug\net6.0\ECommerce.exe
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\bin\Debug\net6.0\ECommerce.deps.json
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\bin\Debug\net6.0\ECommerce.runtimeconfig.json
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\bin\Debug\net6.0\ECommerce.dll
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\bin\Debug\net6.0\ECommerce.pdb
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.csproj.AssemblyReference.cache
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.AssemblyInfoInputs.cache
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.AssemblyInfo.cs
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.csproj.CoreCompileInputs.cache
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.RazorAssemblyInfo.cache
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.RazorAssemblyInfo.cs
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\staticwebassets\msbuild.ECommerce.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\staticwebassets\msbuild.build.ECommerce.props
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ECommerce.props
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ECommerce.props
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\scopedcss\bundle\ECommerce.styles.css
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\scopedcss\projectbundle\ECommerce.bundle.scp.css
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.dll
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\refint\ECommerce.dll
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.pdb
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ECommerce.genruntimeconfig.cache
+C:\Users\versoaltima-pc20\Desktop\ECommerce\ECommerce\obj\Debug\net6.0\ref\ECommerce.dll

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RS Computers\\source\\repos\\ECommerce\\ECommerce\\ECommerce.csproj": {}
+    "C:\\Users\\versoaltima-pc20\\Desktop\\ECommerce\\ECommerce\\ECommerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RS Computers\\source\\repos\\ECommerce\\ECommerce\\ECommerce.csproj": {
+    "C:\\Users\\versoaltima-pc20\\Desktop\\ECommerce\\ECommerce\\ECommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RS Computers\\source\\repos\\ECommerce\\ECommerce\\ECommerce.csproj",
+        "projectUniqueName": "C:\\Users\\versoaltima-pc20\\Desktop\\ECommerce\\ECommerce\\ECommerce.csproj",
         "projectName": "ECommerce",
-        "projectPath": "C:\\Users\\RS Computers\\source\\repos\\ECommerce\\ECommerce\\ECommerce.csproj",
-        "packagesPath": "C:\\Users\\RS Computers\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RS Computers\\source\\repos\\ECommerce\\ECommerce\\obj\\",
+        "projectPath": "C:\\Users\\versoaltima-pc20\\Desktop\\ECommerce\\ECommerce\\ECommerce.csproj",
+        "packagesPath": "C:\\Users\\versoaltima-pc20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\versoaltima-pc20\\Desktop\\ECommerce\\ECommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\RS Computers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\versoaltima-pc20\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
