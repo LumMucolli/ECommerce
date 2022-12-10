@@ -260,6 +260,7 @@ section {
 
 #footer {
     background: #007b5e !important;
+    margin-top: -20px;
 }
 
     #footer h5 {
@@ -331,4 +332,42 @@ section {
         padding-bottom: 0px;
         margin-bottom: 10px;
     }
+}
+
+#custom-search-form {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-left: 3px;
+        margin-bottom: 0px;
+        margin-right: 300px;
+        margin-top: 15px;
+        width: 441px;
+        height: 35px;
+        margin-left: 368px;
+        border-radius: 3px;
+    }
+
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -327px;
+        bottom: -17px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+.search-query:focus + button {
+    z-index: 3;
 }
