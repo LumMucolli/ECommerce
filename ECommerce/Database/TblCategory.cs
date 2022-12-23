@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -11,7 +12,7 @@ namespace ECommerce.Database
         {
             TblProducts = new HashSet<TblProduct>();
         }
-
+        [Key]
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public bool? IsActive { get; set; }
