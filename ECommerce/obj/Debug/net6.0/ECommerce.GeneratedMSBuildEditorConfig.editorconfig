@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\RS Computers\Desktop\ECommerce\ECommerce
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,24 +36,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblProduct/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUHJvZHVjdFxDcmVhdGUuY3NodG1s
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblCartStatus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsQ2FydFN0YXR1c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblProduct/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUHJvZHVjdFxEZWxldGUuY3NodG1s
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblCartStatus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsQ2FydFN0YXR1c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblProduct/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblCartStatus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsQ2FydFN0YXR1c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblProduct/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUHJvZHVjdFxFZGl0LmNzaHRtbA==
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblCartStatus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsQ2FydFN0YXR1c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblProduct/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUHJvZHVjdFxJbmRleC5jc2h0bWw=
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblCartStatus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsQ2FydFN0YXR1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblRole/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUm9sZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblRole/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUm9sZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblRole/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUm9sZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblRole/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUm9sZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/TblRole/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/RS Computers/Desktop/ECommerce/ECommerce/Views/_ViewImports.cshtml]

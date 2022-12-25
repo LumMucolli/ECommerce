@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -11,7 +12,7 @@ namespace ECommerce.Database
         {
             TblShippingDetails = new HashSet<TblShippingDetail>();
         }
-
+        [Key]
         public int MemberId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
