@@ -12,14 +12,13 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECommerce.Migrations
 {
     [DbContext(typeof(EcommerceContext))]
-    [Migration("20221222212347_initdata")]
-    partial class initdata
+    [Migration("20221227124018_initalcreate")]
+    partial class initalcreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseCollation("SQL_Latin1_General_CP1_CI_AS")
                 .HasAnnotation("ProductVersion", "6.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
@@ -42,31 +41,11 @@ namespace ECommerce.Migrations
                     b.Property<int?>("ProductId")
                         .HasColumnType("int");
 
-                    b.HasKey("CartId")
-                        .HasName("PK__Tbl_Cart__51BCD7B70C15C5A0");
+                    b.HasKey("CartId");
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Tbl_Cart", (string)null);
-                });
-
-            modelBuilder.Entity("ECommerce.Database.TblCartStatus", b =>
-                {
-                    b.Property<int>("CartStatusId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartStatusId"), 1L, 1);
-
-                    b.Property<string>("CartStatus")
-                        .HasMaxLength(500)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(500)");
-
-                    b.HasKey("CartStatusId")
-                        .HasName("PK__Tbl_Cart__031908A883A023C5");
-
-                    b.ToTable("Tbl_CartStatus", (string)null);
+                    b.ToTable("TblCarts");
                 });
 
             modelBuilder.Entity("ECommerce.Database.TblCategory", b =>
@@ -78,9 +57,7 @@ namespace ECommerce.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"), 1L, 1);
 
                     b.Property<string>("CategoryName")
-                        .HasMaxLength(500)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool?>("IsActive")
                         .HasColumnType("bit");
@@ -88,14 +65,9 @@ namespace ECommerce.Migrations
                     b.Property<bool?>("IsDelete")
                         .HasColumnType("bit");
 
-                    b.HasKey("CategoryId")
-                        .HasName("PK__Tbl_Cate__19093A0BFB63B2AA");
+                    b.HasKey("CategoryId");
 
-                    b.HasIndex(new[] { "CategoryName" }, "UQ__Tbl_Cate__8517B2E04A69117E")
-                        .IsUnique()
-                        .HasFilter("[CategoryName] IS NOT NULL");
-
-                    b.ToTable("Tbl_Category", (string)null);
+                    b.ToTable("TblCategories");
                 });
 
             modelBuilder.Entity("ECommerce.Database.TblMember", b =>
@@ -107,17 +79,13 @@ namespace ECommerce.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MemberId"), 1L, 1);
 
                     b.Property<DateTime?>("CreatedOn")
-                        .HasColumnType("datetime");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("EmailId")
-                        .HasMaxLength(200)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
-                        .HasMaxLength(200)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool?>("IsActive")
                         .HasColumnType("bit");
@@ -126,26 +94,17 @@ namespace ECommerce.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastName")
-                        .HasMaxLength(200)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Password")
-                        .HasMaxLength(500)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("MemberId")
-                        .HasName("PK__Tbl_Memb__0CF04B18B488BEA9");
+                    b.HasKey("MemberId");
 
-                    b.HasIndex(new[] { "EmailId" }, "UQ__Tbl_Memb__7ED91ACEEF8ADB7F")
-                        .IsUnique()
-                        .HasFilter("[EmailId] IS NOT NULL");
-
-                    b.ToTable("Tbl_Members", (string)null);
+                    b.ToTable("TblMembers");
                 });
 
             modelBuilder.Entity("ECommerce.Database.TblMemberRole", b =>
@@ -162,10 +121,9 @@ namespace ECommerce.Migrations
                     b.Property<int?>("RoleId")
                         .HasColumnType("int");
 
-                    b.HasKey("MemberRoleId")
-                        .HasName("PK__Tbl_Memb__673C212BC88BBDD8");
+                    b.HasKey("MemberRoleId");
 
-                    b.ToTable("Tbl_MemberRole", (string)null);
+                    b.ToTable("TblMemberRoles");
                 });
 
             modelBuilder.Entity("ECommerce.Database.TblProduct", b =>
@@ -180,10 +138,10 @@ namespace ECommerce.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("CreatedDate")
-                        .HasColumnType("datetime");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("Description")
-                        .HasColumnType("datetime");
+                        .HasColumnType("datetime2");
 
                     b.Property<bool?>("IsActive")
                         .HasColumnType("bit");
@@ -195,30 +153,22 @@ namespace ECommerce.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("ModifiedDate")
-                        .HasColumnType("datetime");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("ProductImage")
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(max)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
-                        .HasMaxLength(500)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("Quantity")
                         .HasColumnType("int");
 
-                    b.HasKey("ProductId")
-                        .HasName("PK__Tbl_Prod__B40CC6CD9CB96165");
+                    b.HasKey("ProductId");
 
                     b.HasIndex("CategoryId");
 
-                    b.HasIndex(new[] { "ProductName" }, "UQ__Tbl_Prod__DD5A978A35B6DF84")
-                        .IsUnique()
-                        .HasFilter("[ProductName] IS NOT NULL");
-
-                    b.ToTable("Tbl_Product", (string)null);
+                    b.ToTable("TblProducts");
                 });
 
             modelBuilder.Entity("ECommerce.Database.TblRole", b =>
@@ -230,18 +180,11 @@ namespace ECommerce.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"), 1L, 1);
 
                     b.Property<string>("RoleName")
-                        .HasMaxLength(200)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("RoleId")
-                        .HasName("PK__Tbl_Role__8AFACE1AFCB9D533");
+                    b.HasKey("RoleId");
 
-                    b.HasIndex(new[] { "RoleName" }, "UQ__Tbl_Role__8A2B6160E015BBDE")
-                        .IsUnique()
-                        .HasFilter("[RoleName] IS NOT NULL");
-
-                    b.ToTable("Tbl_Roles", (string)null);
+                    b.ToTable("TblRoles");
                 });
 
             modelBuilder.Entity("ECommerce.Database.TblShippingDetail", b =>
@@ -253,22 +196,16 @@ namespace ECommerce.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ShippingDetailId"), 1L, 1);
 
                     b.Property<string>("Adress")
-                        .HasMaxLength(500)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal?>("AmountPaid")
-                        .HasColumnType("decimal(18,0)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("City")
-                        .HasMaxLength(500)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Country")
-                        .HasMaxLength(500)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(500)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("MemberId")
                         .HasColumnType("int");
@@ -277,24 +214,37 @@ namespace ECommerce.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("PaymentType")
-                        .HasMaxLength(50)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ShippingDetailId")
-                        .HasName("PK__Tbl_Ship__FBB368517F3A09A5");
+                    b.HasKey("ShippingDetailId");
 
                     b.HasIndex("MemberId");
 
-                    b.ToTable("Tbl_ShippingDetails", (string)null);
+                    b.ToTable("TblShippingDetails");
+                });
+
+            modelBuilder.Entity("ECommerce.Models.TblCartStatus", b =>
+                {
+                    b.Property<int>("CartStatusId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartStatusId"), 1L, 1);
+
+                    b.Property<string>("CartStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CartStatusId");
+
+                    b.ToTable("TblCartStatuses");
                 });
 
             modelBuilder.Entity("ECommerce.Database.TblCart", b =>
                 {
                     b.HasOne("ECommerce.Database.TblProduct", "Product")
                         .WithMany("TblCarts")
-                        .HasForeignKey("ProductId")
-                        .HasConstraintName("FK__Tbl_Cart__Produc__35BCFE0A");
+                        .HasForeignKey("ProductId");
 
                     b.Navigation("Product");
                 });
@@ -303,8 +253,7 @@ namespace ECommerce.Migrations
                 {
                     b.HasOne("ECommerce.Database.TblCategory", "Category")
                         .WithMany("TblProducts")
-                        .HasForeignKey("CategoryId")
-                        .HasConstraintName("FK__Tbl_Produ__Categ__286302EC");
+                        .HasForeignKey("CategoryId");
 
                     b.Navigation("Category");
                 });
@@ -313,8 +262,7 @@ namespace ECommerce.Migrations
                 {
                     b.HasOne("ECommerce.Database.TblMember", "Member")
                         .WithMany("TblShippingDetails")
-                        .HasForeignKey("MemberId")
-                        .HasConstraintName("FK__Tbl_Shipp__Membe__300424B4");
+                        .HasForeignKey("MemberId");
 
                     b.Navigation("Member");
                 });
