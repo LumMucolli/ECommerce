@@ -3,6 +3,10 @@
     "mssql1": {
       "type": "mssql.local",
       "connectionId": "ConnectionStrings:ECommerceContext"
+    },
+    "mssql2": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:ECommerceContextConnection"
     }
   }
 }
