@@ -1,6 +1,7 @@
 ﻿using ECommerce.Database;
 using ECommerce.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 using System.Diagnostics;
 
 namespace ECommerce.Controllers
@@ -22,6 +23,11 @@ namespace ECommerce.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View("~/Views/TblRole/Create.cshtml");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

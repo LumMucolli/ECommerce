@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
 using ECommerce.Areas.Identity.Data;
+using ECommerce.Hubs;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Routing;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<EcommerceContext>(options =>
